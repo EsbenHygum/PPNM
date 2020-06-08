@@ -1,12 +1,15 @@
 set term cairolatex input size 8cm,6cm
-set out "plot-gamma.tex"
-set xlabel "x"
-set ylabel "y"
+set out 'plot-gamma.tex'
+set grid
+set title font ", 20"
+set title 'The Gamma function'
+set xtics font ", 10"
+set ytics font ", 10"
+set xlabel 'x' font ", 15"
+set ylabel '$\Gamma(x)$' font ", 15"
 set key bottom right
-set tics out
 set xzeroaxis
 set yzeroaxis
-set title "Gamma function"
 plot [-5:5][-5:5]\
-        "out.txt" 
+	'out.txt' using 1:2 lt 2 lw 3 lc rgb 'blue' with lines title 'Gamma'
 

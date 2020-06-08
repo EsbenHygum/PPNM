@@ -12,8 +12,8 @@ for ii in range(0, n):
     for jj in range(0, m):
         A[ii, jj] = np.random.random()
 
-print("\n----------Part A.1----------\n")
-print("\nTesting decomposition:\n")
+print("\nPart A.1:\n")
+print("\nGS decomposition:\n")
 
 Q, R = qr_decomp.qr_gs_decomp(A)
 
@@ -36,7 +36,7 @@ matrix.printing(QR)
 print("A: \n")
 matrix.printing(A)
 
-print("\n----------Part A.2-----------\n")
+print("\nPart A.2:\n")
 
 Sq_mt = matrix(m, m)
 b = vector(m)
@@ -46,7 +46,7 @@ for ii in range(m):
     for jj in range(m):
         Sq_mt[ii, jj] = random.random()
 
-print("My solver gives me the following solution:")
+print("My solver gives the following solution:")
 x = qr_decomp.qr_gs_solve(Sq_mt, b)
 vector.printing(x)
 
@@ -57,7 +57,7 @@ vector.printing(Ax)
 print("b:")
 vector.printing(b)
 
-print("\n----------Part B.1----------\n")
+print("\nPart B:\n")
 
 print("Printing the inverse matrix:\nB:")
 B = qr_decomp.qr_gs_inverse(Sq_mt)

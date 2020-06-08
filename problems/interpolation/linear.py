@@ -39,7 +39,7 @@ def integrand(x, a, b):
 	return a * x +b
 
 x = np.arange(-5, 6, 0.1)
-def func_to_fit(x) : return np.sin(x)
+def func_to_fit(x) : return np.sinc(x)
 y = [func_to_fit(xi) for xi in x]
 u = np.arange(x[0], 5, 0.1)
 

@@ -1,0 +1,22 @@
+set term svg
+set out 'quad_plot.svg'
+set terminal svg enhanced background rgb 'white'
+
+set multiplot layout 3, 1 title "Quadratic interpolation"
+set ylabel 'f(u)'
+plot \
+	'out_quad.txt' index 0 using 1:2 lw 4 lc rgb 'black' with lines title 'My interpolation'\
+	, 'out_quad.txt' index 0 using 1:3 lw 4 dt 2 lc rgb 'red' with lines title "SciPy's quadratic interpolator"\
+
+set ylabel 'Derivative'
+
+plot \
+	'out_quad.txt' index 0 using 1:4 lw 4 lc rgb 'black' with lines title 'My derivative'\
+	, 'out_quad.txt' index 1 using 1:2 lw 4 dt 2 lc rgb 'red' with lines title 'Numpy derivative'\
+
+set xlabel 'u'
+set ylabel 'Area'
+plot \
+	'out_quad.txt' index 0 using 1:5 lw 4 lc rgb 'black' with lines title 'My area'\
+	, 'out_quad.txt' index 0 using 1:6 lw 4 dt 2 lc rgb 'red' with lines title 'Scipy integration'\
+

@@ -14,7 +14,7 @@ class main{
         return quad.o8av(f,0,inf,acc:1e-3,eps:0);
     }
     static int Main(){
-    for(double x= -4.0+1.0/32;x<=6;x+=1.0/16){
+    for(double x= -4.0+1.0/32;x<=6;x+=1.0/64){
         Write($"{x:f5} {gamma(x):f15}\n");
         }
     
