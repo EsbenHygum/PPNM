@@ -1,0 +1,10 @@
+[5.85  5.    4.4   3.6   2.65  1.475 1.26  0.76  0.555]
+Fitted parameters
+[4.958668654524107, -0.17137943061668365]
+Covariance matrix
+cov[0,0] = 0.000890
+cov[0,1] = -0.000087
+cov[1,0] = -0.000087
+cov[1,1] = 0.000013
+Half-life is: -4.0 pm 0.1 days
+According to wikipedia, the half-life of Ra-224 is 3.6 days.
