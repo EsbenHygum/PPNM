@@ -17,14 +17,14 @@ def sir_model(t, y):
 	return np.array(dydt)
 a = 0
 b = 200
-h = 0.5
+h = 1
 y1 = 200 #start number of infected
 y0 = N - y1 #start number of susceptible
 y2 = 0 #Start number of removed
 t = np.array([a])
 y = np.array([y0, y1, y2])
 
-y_res, points = driver(sir_model, rungekutta34, t, b, h, y, 1e-4, 1e-4)
+y_res, points = driver(sir_model, rungekutta34, t, b, h, y, 1e-3, 1e-3)
 
 ts = points[0,:]
 ys = points[1,:]
