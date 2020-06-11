@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set title "Exercise A: Particle in a box"
+set out "ParticleInBox.svg"
+set xlabel "x"
+set ylabel "y"
+
+plot "eigenfunc.txt" using 1:2 with lines title "Eigenfunction 1", \
+	"" using 1:3 with lines title "Eigenfunction 2", \
+	"" using 1:4 with lines title "Eigenfunction 3", \
+	"" using 1:5 with lines title "Eigenfunction 4"
+
+

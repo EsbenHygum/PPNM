@@ -1,0 +1,12 @@
+set term svg
+set out 'plt_sir.svg'
+set terminal svg enhanced background rgb 'white'
+set grid 
+set title "SIR model for Denmark, using Tc = 3.5"
+
+plot\
+	"sir_model.txt" using 1:2 lt 2 lw 2 lc rgb 'black' with lines title "Susceptible"\
+	, "sir_model.txt" using 1:3 lt 2 lw 2 lc rgb 'blue' with lines title "Infected"\
+	, "sir_model.txt" using 1:4 lt 2 lw 2 lc rgb 'red' with lines title "Removed"
+
+
