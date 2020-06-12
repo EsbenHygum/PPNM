@@ -1,0 +1,5 @@
+
+Testing solutions to Rosenbrock's valley function:
+The analytic function yields a minimum at [1.00; 1.00]
+The numeric function yields a minimum at [1.00; 1.00]
+The starting point was chosen as [2.00; 1.00]
