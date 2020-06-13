@@ -1,0 +1,6 @@
+Running minimization method on Rosenbrock's function:
+Quasi Newton analytical method yields a minimum at [1.00; 1.00] with 21782 steps
+
+
+Running minimization method on Himmelblau's function:
+Quasi Newton analytical method yields a minimum at [3.00; 2.00] with 152 steps
