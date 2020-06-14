@@ -1,0 +1,15 @@
+
+
+Volume of sphere with radius = 1:
+Result should be 4/3 pi (approximately 4.19)
+Result is 4.251150106639819 p/m 0.03801792950000271
+
+
+Result of difficult integral: 
+Result should be roughly 1.3932
+Result is 1.3659296223833477 p/m 0.030767607007044638
+
+
+Testing convergence on error of sphere:
+See plot
+The expected result has been multiplied by a factor of 5

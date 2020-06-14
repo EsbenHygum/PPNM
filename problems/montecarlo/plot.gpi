@@ -1,0 +1,12 @@
+set term svg
+set out 'plot.svg'
+set terminal svg enhanced background rgb 'white'
+set xlabel "Iteration"
+set ylabel "Error"
+set key top right
+set logscale xy
+plot\
+	"convergence.txt" using 1:2 lt 1 lw 4 lc rgb 'black' with lines title 'Monte Carlo error',\
+	"convergence.txt" using 1:3 dt 2 lw 4 lc rgb 'red' with lines title 'Expected error'\
+
+
