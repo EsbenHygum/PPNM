@@ -22,5 +22,5 @@ static int Main(string[] args){
 	outstream.Close();
 	instream.Close();
 return 0;
-}//Main
-}//class
+}
+}

@@ -1,4 +1,3 @@
-// (C) 2020 Dmitri Fedorov; License: GNU GPL v3+; no warranty.
 using System;
 public static class cmath{
 
@@ -43,4 +42,4 @@ public static complex pow (this complex a, double x){
 public static complex pow (this complex a, complex b){
 	return exp(b*log(a)); }
 
-}// cmath
+}
